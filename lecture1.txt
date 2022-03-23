@@ -1,13 +1,32 @@
-Q- What happened when hitting request on browser?
+Q1- What happened when hitting request on browser?
 ans:
     1.It goes to DNS server and fetch the IP of corresponding domain and come back to browser and then browser hit IP of requested domain.
     2.That IP is a IP of load balance or we call it frontier server or gateway server.
     3.The order of request after load balancer,it goes to Application server and then to database.
     
-Q-How DNS work? Does DNS have its own server?
+Q2-How DNS work? Does DNS have its own server?
 ans:
     1.For DNS server Internet service providers(ISP) are responsible for that.basically , they configure the DNS IPs at the time of connection .
     2.And DNS server have multiple IPs also.
     3.When request goes to DNS.It return IP of domain that user want to search for it.
 
-Q-
+Q3- But we know In this world we have millions of domain name then how it is possible to return 
+   so fast?
+ans:
+    1.So, To retrieve quickly response,ISPs put data near to processor,it means in primary memory.
+    2.But we know that we can not just pust whole world data in a sigle primary memory.else it will be very costly. and single point of failure.
+    3.So ISP design the ISPs in such order:
+        3.1->ISPs place DNS for group of request and their algorithm help in to get more frequent searching domain and mapped with same IPs.
+    4.But lets say , If user search a domain which is not present in it's near DNS server,In that case it pass the same request to another DNS server and goes hierarchy it we will not get the corresponding IP.
+
+Q4.As i seen, If i connnected to Airtel and checks that the IP changes frequently, So at the time of fetching IP for a perticular domain can be wrong and mapped to different sever because IP can change at any time ?
+ans:
+    1.So for this above problem , we have two types of IP one is dynamic and another one is static.
+    2.for hosting a domain ,we use static IPs.that IP never changes unless you want it change.
+    3.for dynamic usage we have an example:
+    4.let's pick an ISP provider AIRTEL, If we see frequently our IP of sytem .it changes after a time .The reason is,If Airtel map an IP for a user then may be it is very costly and as it grow IPs start to end. So they create a pool of IPs those users access the service can pick random IP and those who are not using return back the IPs in pool.
+
+-----------------------------------------------------------------------------------------------
+                                Case Study of delicious
+    
+
