@@ -1,0 +1,13 @@
+Q- What happened when hitting request on browser?
+ans:
+    1.It goes to DNS server and fetch the IP of corresponding domain and come back to browser and then browser hit IP of requested domain.
+    2.That IP is a IP of load balance or we call it frontier server or gateway server.
+    3.The order of request after load balancer,it goes to Application server and then to database.
+    
+Q-How DNS work? Does DNS have its own server?
+ans:
+    1.For DNS server Internet service providers(ISP) are responsible for that.basically , they configure the DNS IPs at the time of connection .
+    2.And DNS server have multiple IPs also.
+    3.When request goes to DNS.It return IP of domain that user want to search for it.
+
+Q-
