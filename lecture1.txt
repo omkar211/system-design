@@ -27,7 +27,7 @@ ans:
     4.let's pick an ISP provider AIRTEL, If we see frequently our IP of sytem .it changes after a time .The reason is,If Airtel map an IP for a user then may be it is very costly and as it grow IPs start to end. So they create a pool of IPs those users access the service can pick random IP and those who are not using return back the IPs in pool.
 
 -----------------------------------------------------------------------------------------------
-                                Case Study of delicious
+                                Case Study of delicious webservice
     
 
 Delicious was a project that save all the bookmarks of users before browser have bookmarks save functionality.
