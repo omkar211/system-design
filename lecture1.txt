@@ -19,7 +19,7 @@ ans:
         3.1->ISPs place DNS for group of request and their algorithm help in to get more frequent searching domain and mapped with same IPs.
     4.But lets say , If user search a domain which is not present in it's near DNS server,In that case it pass the same request to another DNS server and goes hierarchy it we will not get the corresponding IP.
 
-Q4.As i seen, If i connnected to Airtel and checks that the IP changes frequently, So at the time of fetching IP for a perticular domain can be wrong and mapped to different sever because IP can change at any time ?
+Q4.As i seen, If i connnected to Airtel and checks that the IP changes frequently, So at the time of fetching IP for a perticular domain can be wrong and mapped to different sever because IP can change at anytime ?
 ans:
     1.So for this above problem , we have two types of IP one is dynamic and another one is static.
     2.for hosting a domain ,we use static IPs.that IP never changes unless you want it change.
@@ -30,3 +30,14 @@ ans:
                                 Case Study of delicious
     
 
+Delicious was a project that save all the bookmarks of users before browser have bookmarks save functionality.
+1. Initially, It was hosted on a laptop of 40GB space.it means load balancer,Application server and database is on a single server.
+2. Afer few months,they got good response as it was becoming popular but stores increases by 10x also. after that they got worried about how we can scale.On a sigle 40gb server not possible.
+
+Q. So the question is how can delicious scale now?
+ans.there are 2 types of solution for that.
+    1. Vertical scale
+    2. Horizontal scale
+Let's discuss one by one 
+1.Vertical scale is big box of memory and we store everything in that single box.
+2.Horizontal scale is add more memory at any time and remove if not need .Simply means In horizontal scale add small storage boxes when need it.
